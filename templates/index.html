@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Customiser</title>
     <style>
-        .banner {
-            background-image: url(riPic.png);
-            color: white;
-            height: 50vh;
-            background-size: cover;
-            background-position: center;
-        }
         label {
             font-family: Arial, Helvetica, sans-serif;
             font-size: larger;       
@@ -44,7 +37,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Instructions</a>
+                    <a class="nav-link" href="/instructions">Instructions</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
@@ -65,16 +58,16 @@
     <div class="input d-flex justify-content-center align-items-center">
         <div class="mb-3">
           <form action="/submit" method="POST" enctype="multipart/form-data">
-            <label for="exampleFormControlTextarea1" class="form-label align text">Enter Job Post URL</label>
-            <textarea class="form-control" id="user-url" rows="2" cols="70" name="user-url"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label align text">Enter Job Post Description</label>
+            <textarea class="form-control" id="user-url" rows="6" cols="70" name="user-url"></textarea>
             <input type="file" class="form-control" id="user-cv" name="user-cv">
-            <button type="submit" class="btn btn-primary float-end">CUSTOMIZE CV</button>
+            <button type="submit" class="btn btn-primary float-end btn-dark">CUSTOMIZE CV</button>
           </form>
             
           </div>
     </div>
     <p id="tester">{{new_cv}}</p>
-    <footer class="bg-body-tertiary text-center">
+    <footer class="bg-body-tertiary text-center fixed-bottom">
         <!-- Grid container -->
         <div class="container p-4"></div>
         <!-- Grid container -->

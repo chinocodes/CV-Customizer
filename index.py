@@ -46,7 +46,9 @@ def scrape_qualifications() :
     return render_template("index.html", new_cv=new_cv)
 
 
-
+@app.route("/instructions")
+def instructions():
+    return render_template("instructions.html")
 
 
 
